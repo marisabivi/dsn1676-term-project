@@ -59,6 +59,7 @@ h2 {
         width: 200px;
         height: auto;
         top: 200px;
+        left: -5em;
         animation: hover 2s ease-in-out alternate infinite;
         transform-origin: center;
 }
@@ -77,7 +78,7 @@ h2 {
         position: absolute;
         width: 500px;
         height: auto;
-        left: 30px;
+        left: -1em;
         top: 80px;
         z-index: -1;
         animation: hover2 2.5s ease-in-out alternate infinite;
@@ -133,23 +134,58 @@ a:hover {
     
 @media only screen and (min-width: 20em) {
     
-    @keyframes hover {
-     0% { 
-        transform: translateY(50px);
-    }
-        
-    100% {
-       transform: translateY(0px); 
-    }
-    }
 }
     
 @media only screen and (min-width: 40em) {
     .logo {
-        width: 400px;
+        width: 200px;
         height: auto;
         animation: fade 2.5s linear;
     }
+    
+     .muru {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        top: 200px;
+        left: 3em;
+        animation: fly 2.5s ease-in forwards;
+        transform-origin: center;
+}
+
+@keyframes fly {
+   
+    10% { 
+        transform: translatex(-20em);
+    }
+        
+    100% {
+       transform: translatex(50px);
+       
+    }
+}
+ 
+ .deus {
+        position: absolute;
+        width: 500px;
+        height: auto;
+        left:15em;
+        top: 80px;
+        z-index: -1;
+        animation: fly2 3s ease-in-out forwards;
+        transform-origin: center;
+}
+     
+@keyframes fly2 {
+     0% { 
+        transform: translateX(100em);
+    }
+        
+    
+    100% {
+        transform: translateX(30px)
+    }
+}
 }
     
 @media only screen and (min-width: 60em) {
