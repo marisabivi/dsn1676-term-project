@@ -121,8 +121,8 @@ a:hover {
 }
 
 .arrow {
-    width: 25px;
-    height: auto;
+    width: 50%;
+    margin: 25% 25% -5%;
 }
 
 .solid2 {
