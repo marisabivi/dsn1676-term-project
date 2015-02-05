@@ -58,7 +58,7 @@ h2 {
         position: absolute;
         width: 200px;
         height: auto;
-        left: 10px;
+        left: -5em;
         top: 200px;
         animation: hover 2s ease-in-out alternate infinite;
         transform-origin: center;
