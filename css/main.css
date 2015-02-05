@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background: #cc89ff;
+    background: #b08cc0;
     background-image: url(../images/honey2.png);
     background-size: 100px;
 
@@ -29,27 +29,6 @@ body {
     width: 250px;
     height: auto;
     animation: fade 2.5s linear;
-}
-
-.down {
-    background-color: purple;
-    border-radius: 50%;
-    width: 40px; 
-    line-height: 40px;
-    display: block;
-    position: relative;
-    top: -120px;
-    margin: auto;
-    text-decoration: none; 
-    size: 5%;
-    -webkit-transition: all .50s linear;
-    transition: all .50s linear;
-}
-
-.arrow {
-    width: 25px;
-    height: auto;
-    text-align: center;
 }
     
 @keyframes fade {
@@ -65,6 +44,74 @@ body {
     }
 }
 
+h2 {
+    text-align: center;
+}
+
+ .muru {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        left: 30px;
+        top: 200px;
+        animation: hover 2s ease-in-out alternate infinite;
+        transform-origin: center;
+    }
+    
+ @keyframes hover {
+     0% { 
+        transform: translateY(50px);
+    }
+        
+    100% {
+       transform: translateY(0px); 
+    }
+        
+ .deus {
+        position: absolute;
+        width: 10px;
+        height: auto;
+        left: 30px;
+        top: -20px;
+    }
+     
+@keyframes ex {
+     0% { 
+        transform: translateY(5%);
+    }
+        
+    50% {
+       transform: translateY(0%); 
+    }
+        
+    100% { 
+        transform: translateY(5%);
+    }
+    
+.down {
+    background-color: #d0b8cb;
+    border-radius: 50%;
+    width: 40px; 
+    line-height: 40px;
+    display: block;
+    position: relative;
+    top: -10px;
+    margin: auto;
+    text-decoration: none; 
+    size: 5%;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+a:hover {
+    background-color: #9476a2;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 25px;
+    height: auto;
+}
 
 @media only screen and (min-width: 20em) {
 
@@ -88,27 +135,6 @@ body {
        transform: translateY(0px); 
     }
     
-
-    .deus {
-        position: absolute;
-        width: 10px;
-        height: auto;
-        left: 30px;
-        top: 800px;
-    }
-        
-@keyframes ex {
-     0% { 
-        transform: translateY(5%);
-    }
-        
-    50% {
-       transform: translateY(0%); 
-    }
-        
-    100% { 
-        transform: translateY(5%);
-    }
 
 }
     
