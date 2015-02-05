@@ -24,19 +24,12 @@ body {
 .logo {
     width: 180px;
     height: auto;
-    animation: fade 2.5s all linear;
+    animation: fade 2.5s ease-in forwards;
 }
-    
+
 @keyframes fade {
-    0% {
-        transform: opacity;
-        opacity: 0 
-    }
-    
-    100% { 
-        transform: opacity;
-         opacity: 1
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .bg {
@@ -44,13 +37,16 @@ body {
     background-image: url(../images/honey3.png);
     background-repeat: repeat;
     background-size: 100px;
+    height: 600px;
+    width: 100%;
+    z-index: -3;
 }
 
 .solid {
     background-color:  #e8cbe2;
     overflow: hidden;
     padding: 0;
-    z-index: -2;
+    z-index: -3;
     margin:0;
 }
 
@@ -62,7 +58,6 @@ h2 {
         position: absolute;
         width: 200px;
         height: auto;
-        left: 2px;
         top: 200px;
         animation: hover 2s ease-in-out alternate infinite;
         transform-origin: center;
@@ -137,15 +132,6 @@ a:hover {
 }
     
 @media only screen and (min-width: 20em) {
-    .muru {
-        position: absolute;
-        width: 200px;
-        height: auto;
-        left: 30px;
-        top: 200px;
-        animation: hover 2s ease-in-out alternate infinite;
-        transform-origin: center;
-    }
     
     @keyframes hover {
      0% { 
@@ -154,6 +140,7 @@ a:hover {
         
     100% {
        transform: translateY(0px); 
+    }
     }
 }
     
