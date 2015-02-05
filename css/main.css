@@ -18,16 +18,13 @@ html {
 }
 
 body {
-    background: #b08cc0;
-    background-image: url(../images/honey3.png);
-    background-size: 100px;
     margin: 0;
 }
 
 .logo {
     width: 180px;
     height: auto;
-    animation: fade 2.5s linear;
+    animation: fade 2.5s all linear;
 }
     
 @keyframes fade {
@@ -40,6 +37,13 @@ body {
         transform: opacity;
          opacity: 1
     }
+}
+
+.bg {
+    background: #b08cc0;
+    background-image: url(../images/honey3.png);
+    background-repeat: repeat;
+    background-size: 100px;
 }
 
 .solid {
@@ -58,7 +62,7 @@ h2 {
         position: absolute;
         width: 200px;
         height: auto;
-        left: -5em;
+        left: 2px;
         top: 200px;
         animation: hover 2s ease-in-out alternate infinite;
         transform-origin: center;
