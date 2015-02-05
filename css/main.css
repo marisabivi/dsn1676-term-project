@@ -28,7 +28,33 @@ body {
     position: absolute;
     width: 250px;
     height: auto;
+    animation: fade 2.5s linear;
 }
+
+@keyframes fade {
+    0% {
+        transform: opacity;
+        opacity: 0
+    
+    }
+    
+    100% { 
+        transform: opacity;
+         opacity: 1
+    }
+}
+
+.down {
+    background-color: purple;
+    border-radius: 50%;
+    width: 6em; 
+    line-height: 6em;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none; 
+    margin: 0 1.4em;
+}
+
 
 
 @media only screen and (min-width: 20em) {
@@ -56,24 +82,25 @@ body {
 
     .deus {
         position: absolute;
-        width: 450px;
+        width: 10px;
         height: auto;
         left: 30px;
-        top: 430px;
-        animation: hover-2 3s ease-in-out alternate infinite;
-        transform-origin: center;
+        top: 800px;
     }
         
-    @keyframes hover-2 {
+@keyframes ex {
      0% { 
-        transform: translateY(70px);
+        transform: translateY(5%);
     }
         
-    100% {
-       transform: translateY(0px); 
+    50% {
+       transform: translateY(0%); 
     }
-    
-    
+        
+    100% { 
+        transform: translateY(5%);
+    }
+
 }
     
 @media only screen and (min-width: 40em) {
@@ -83,8 +110,15 @@ body {
         width: 300px;
         height:100px;
         top: auto;
-}
+    }
   
+    .deus {
+        position: absolute;
+        width: 450px;
+        height: auto;
+        left: 30px;
+        top: 800px;
+    }
 }
     
 @media only screen and (min-width: 60em) {
