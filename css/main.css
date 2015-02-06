@@ -144,13 +144,18 @@ a:hover {
     width:100%;
 }
     
-/* @media only screen and (min-width: 20em) {
+@media only screen and (min-width: 20em) {
     
     .muru {
         position: absolute;
         width: 200px;
         height: auto;
     }
+    
+    .hov {
+        top: 150px;
+        left: -10%;
+  }
  
  .deus {
         position: absolute;
@@ -158,10 +163,11 @@ a:hover {
         height: auto;
  }
     
-  .hov {
-        top: 100px;
-        left: -20em;
-  }
+ .hov2 {
+      top: 70px;
+      right: 75%;
+ }
+    
 }
     
 @media only screen and (min-width: 40em) {
@@ -175,8 +181,6 @@ a:hover {
         position: absolute;
         width: 200px;
         height: auto;
-        top: 150px;
-        left: -10%;
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
 }
@@ -192,6 +196,10 @@ a:hover {
        
     }
 }
+    .hov {
+        top: 150px;
+        left: -5%;
+    }
  
     .muru:hover {
         opacity: 0;
@@ -201,9 +209,6 @@ a:hover {
         position: absolute;
         width: 500px;
         height: auto;
-        left:30%;
-        top: 80px;
-        z-index: -1;
         animation: fly2 3s ease-in-out forwards;
         transform-origin: center;
 }
@@ -218,6 +223,10 @@ a:hover {
         transform: translateX(30px)
     }
  }
+    .hov2 {
+        right:70%;
+        top: 80px;
+    }
 
 }
     
@@ -226,8 +235,6 @@ a:hover {
         position: absolute;
         width: 200px;
         height: auto;
-        top: 100px;
-        left: -5%;
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
 }
@@ -242,20 +249,67 @@ a:hover {
             transform: translatex(50px);
        
         }
-    }     
+    } 
+    
+    .hov {
+        top: 80px;
+        left: -5%;
+    }
+ 
   .deus {
         position: absolute;
         width: 500px;
         height: auto;
-        left: 55%;
-        top: 80px;
-        z-index: -1;
         animation: fly2 3s ease-in-out forwards;
         transform-origin: center;
     }
-} */
+    
+    .hov2 {
+        right:40%;
+        top: 60px;
+    }
+}
 
 @media only screen and (min-width: 90em) {
+    
+      .muru {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        animation: fly 2.5s ease-in forwards;
+        transform-origin: center;
+}
+
+    @keyframes fly {
+   
+        10% { 
+            transform: translatex(-20em);
+        }
+        
+        100% {
+            transform: translatex(50px);
+       
+        }
+    } 
+    
+    .hov {
+        top: 80px;
+        left: -5%;
+    }
+ 
+  .deus {
+        position: absolute;
+        width: 500px;
+        height: auto;
+        animation: fly2 3s ease-in-out forwards;
+        transform-origin: center;
+    }
+    
+    .hov2 {
+        right:40%;
+        top: 60px;
+    }
+
     
 }
 
