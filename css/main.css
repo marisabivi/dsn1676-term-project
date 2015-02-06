@@ -5,7 +5,6 @@
 @viewport {width: device-width; scale:1;}
 
 html {
-    
     -moz-text-size-adjust:100%;
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
@@ -20,9 +19,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .logo {
     width: 180px;
     height: auto;
+    -webkit-animation: fade 2.5s ease-in forwards;
     animation: fade 2.5s ease-in forwards;
 }
 
@@ -58,21 +59,31 @@ h2 {
     text-align: center;
 }
 
- .muru {
+.muru {
         position: absolute;
         width: 200px;
         height: auto;
+        opacity: 1;
+        -webkit-transition:  opacity 1s ease-in forwards;
+        transition: opacity 1s ease-in forwards;
 }
 
 .hov {
     position: absolute;
     top: 150px;
     left: -15%;
+    -webkit-animation: hover 2s ease-in-out alternate infinite;
     animation: hover 2s ease-in-out alternate infinite;
     transform-origin: center;
 }
+
+    
+.mur:hover .muru{
+    opacity: 0;
+}
  
- .deus {
+ 
+.deus {
         position: absolute;
         width: 500px;
         height: auto;
@@ -82,7 +93,8 @@ h2 {
     position: absolute;
     z-index: -1;
     top: 80px;
-    right: 95%;
+    right: 100%;
+    -webkit-animation:  hover 2.5s ease-in-out alternate infinite;
     animation: hover 2.5s ease-in-out alternate infinite;
     transform-origin: center;
    
@@ -165,7 +177,7 @@ a:hover {
     
  .hov2 {
       top: 70px;
-      right: 75%;
+      right: 100%;
  }
     
 }
@@ -174,6 +186,7 @@ a:hover {
     .logo {
         width: 200px;
         height: auto;
+        -webkit-animation: fade 2.5s linear; 
         animation: fade 2.5s linear;
     }
     
@@ -181,18 +194,31 @@ a:hover {
         position: absolute;
         width: 200px;
         height: auto;
+        -webkit-animation: fly 2.5s ease-in forwards;
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
 }
 
-@keyframes fly {
+@-webkit-keyframes fly {
    
     10% { 
-        transform: translatex(-20em);
+        -webkit-transform: translatex(-20em);
     }
         
     100% {
-       transform: translatex(50px);
+       -webkit-transform: translatex(50px);
+       
+    }
+}
+    
+@keyframes fly {
+   
+    10% { 
+        transform: translateX(-20em);
+    }
+        
+    100% {
+       transform: translateX(50px);
        
     }
 }
@@ -209,9 +235,21 @@ a:hover {
         position: absolute;
         width: 500px;
         height: auto;
+        -webkit-animation: fly2 3s ease-in-out forwards;
         animation: fly2 3s ease-in-out forwards;
         transform-origin: center;
 }
+ 
+@-webkit-keyframes fly2 {
+     0% { 
+        -webkit-transform: translateX(100em);
+    }
+        
+    
+    100% {
+        -webkit-transform: translateX(30px)
+    }
+ }
      
 @keyframes fly2 {
      0% { 
@@ -235,10 +273,23 @@ a:hover {
         position: absolute;
         width: 200px;
         height: auto;
+        -webkit-animation: fly 2.5s ease-in forwards;
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
 }
 
+    @-webkit-keyframes fly {
+   
+        10% { 
+            -webkit-transform: translatex(-20em);
+        }
+        
+        100% {
+            -webkit-transform: translatex(50px);
+       
+        }
+    }
+    
     @keyframes fly {
    
         10% { 
@@ -250,16 +301,12 @@ a:hover {
        
         }
     } 
-    
-    .hov {
-        top: 80px;
-        left: -5%;
-    }
- 
+
   .deus {
         position: absolute;
         width: 500px;
         height: auto;
+        -webkit-animation: fly2 3s ease-in-out forwards;
         animation: fly2 3s ease-in-out forwards;
         transform-origin: center;
     }
@@ -268,6 +315,17 @@ a:hover {
         right:40%;
         top: 60px;
     }
+}
+
+.solid2 {
+    position: absolute;
+    height: 10em;
+    background-color:  #e8cbe2;
+    overflow: hidden;
+    padding: 0;
+    top: 33em;
+    margin: 0;
+    width:100%;
 }
 
 @media only screen and (min-width: 90em) {
@@ -279,21 +337,9 @@ a:hover {
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
 }
-
-    @keyframes fly {
-   
-        10% { 
-            transform: translatex(-20em);
-        }
-        
-        100% {
-            transform: translatex(50px);
-       
-        }
-    } 
     
     .hov {
-        top: 80px;
+        top: 100px;
         left: -5%;
     }
  
@@ -308,8 +354,6 @@ a:hover {
     .hov2 {
         right:40%;
         top: 60px;
-    }
-
-    
+    }   
 }
 
