@@ -76,12 +76,10 @@ h2 {
     animation: hover 2s ease-in-out alternate infinite;
     transform-origin: center;
 }
-
-    
+ 
 .mur:hover .muru{
     opacity: 0;
 }
- 
  
 .deus {
         position: absolute;
@@ -167,18 +165,18 @@ a:hover {
     .hov {
         top: 150px;
         left: -10%;
-  }
+    }
  
  .deus {
         position: absolute;
         width: 500px;
         height: auto;
- }
+    }
     
  .hov2 {
       top: 70px;
       right: 100%;
- }
+    }
     
 }
     
@@ -197,31 +195,31 @@ a:hover {
         -webkit-animation: fly 2.5s ease-in forwards;
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
-}
+     }
 
-@-webkit-keyframes fly {
+    @-webkit-keyframes fly {
    
-    10% { 
-        -webkit-transform: translatex(-20em);
-    }
+        10% { 
+            -webkit-transform: translatex(-20em);
+        }
         
-    100% {
-       -webkit-transform: translatex(50px);
+        100% {
+            -webkit-transform: translatex(50px);
        
+        }
     }
-}
     
-@keyframes fly {
+    @keyframes fly {
    
-    10% { 
-        transform: translateX(-20em);
-    }
+        10% { 
+            transform: translateX(-20em);
+        }
         
-    100% {
-       transform: translateX(50px);
-       
+        100% {
+            transform: translateX(50px);
+        }
     }
-}
+    
     .hov {
         top: 150px;
         left: -5%;
@@ -231,41 +229,39 @@ a:hover {
         opacity: 0;
     }
     
- .deus {
+    .deus {
         position: absolute;
         width: 500px;
         height: auto;
         -webkit-animation: fly2 3s ease-in-out forwards;
         animation: fly2 3s ease-in-out forwards;
         transform-origin: center;
-}
+    }
  
-@-webkit-keyframes fly2 {
-     0% { 
-        -webkit-transform: translateX(100em);
-    }
-        
+    @-webkit-keyframes fly2 {
+        0% { 
+            -webkit-transform: translateX(100em);
+        }   
     
-    100% {
-        -webkit-transform: translateX(30px)
+        100% {
+            -webkit-transform: translateX(30px)
+        }
     }
- }
      
-@keyframes fly2 {
-     0% { 
-        transform: translateX(100em);
-    }
+    @keyframes fly2 {
+        0% { 
+            transform: translateX(100em);
+        }
         
+        100% {
+            transform: translateX(30px)
+        }
+    }
     
-    100% {
-        transform: translateX(30px)
-    }
- }
-    .hov2 {
-        right:70%;
-        top: 80px;
-    }
-
+        .hov2 {
+            right:70%;
+            top: 80px;
+        }
 }
     
 @media only screen and (min-width: 60em) {
@@ -276,7 +272,7 @@ a:hover {
         -webkit-animation: fly 2.5s ease-in forwards;
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
-}
+      }
 
     @-webkit-keyframes fly {
    
@@ -315,18 +311,17 @@ a:hover {
         right:40%;
         top: 60px;
     }
-}
 
-.solid2 {
-    position: absolute;
-    height: 10em;
-    background-color:  #e8cbe2;
-    overflow: hidden;
-    padding: 0;
-    top: 33em;
-    margin: 0;
-    width:100%;
-}
+    .solid2 {
+        position: absolute;
+        height: 10em;
+        background-color:  #e8cbe2;
+        overflow: hidden;
+        padding: 0;
+        top: 33em;
+        margin: 0;
+        width:100%;
+    }
 
 @media only screen and (min-width: 90em) {
     
