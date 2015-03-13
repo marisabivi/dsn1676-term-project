@@ -81,8 +81,8 @@ h2 {
         position: absolute;
         width: 200px;
         height: auto;
-        -webkit-opacity: 1;
-        opacity: 1;
+        -webkit-opacity: 0;
+        opacity: 0;
      }
 
 .mur a: hover {
