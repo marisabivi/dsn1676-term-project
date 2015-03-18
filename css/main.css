@@ -27,9 +27,21 @@ body {
     animation: fade 2.5s ease-in forwards;
 }
 
+
+.collapse {
+    background: transparent url("../images/toggle.svg") center;
+    background-repeat: no-repeat;
+    background-color:#e8cbe2; 
+    position: relative;
+    transition: all 100ms linear;
+    opacity: 1;
+    height: 5em;
+    width: 3em;
+    overflow: hidden;
+    border: none;
+    
+}
 .toggle {
-    height: 2em;
-    width: auto;
     position:absolute;
     left: 85%;
     top: 2em;
