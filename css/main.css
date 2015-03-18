@@ -47,6 +47,24 @@ body {
     top: 2em;
 }
 
+.panel {
+    width: 100%;
+    display: none;
+    background-color:#e8cbe2;
+    color:  #6e387c;
+    text-align: center;
+    transform: translateY(50%);
+    
+    transition: all 200ms linear;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.js-panel {
+    display:block;
+    max-height: 40em;   
+}
+
 @-webkit-keyframes fade {
     0% { -webkit-opacity: 0; }
     100% { -webkit-opacity: 1; }
