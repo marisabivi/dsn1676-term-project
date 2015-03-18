@@ -76,19 +76,6 @@ h2 {
     animation: hover 2s ease-in-out alternate infinite;
     transform-origin: center;
 }
- 
-.mur {
-        position: absolute;
-        width: 200px;
-        height: auto;
-        -webkit-opacity: 0;
-        opacity: 0;
-     }
-
-.mur a: hover {
-    -webkit-opacity: 0;
-    opacity: 0;
-}
     
 .deus {
         position: absolute;
@@ -192,6 +179,10 @@ h2 {
     background-color: #6e387c;     
 }
 
+.main {
+    width: 50%;
+}
+
     
 @media only screen and (min-width: 40em) {
     .logo {
@@ -276,8 +267,9 @@ h2 {
 @media only screen and (min-width: 60em) {
       .muru {
         position: absolute;
-        width: 200px;
-        height: auto;
+        width: auto;
+        height: 5em;
+        padding-left: 10em;
         -webkit-animation: fly 2.5s ease-in forwards;
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;

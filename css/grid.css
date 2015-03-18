@@ -9,6 +9,8 @@
   -ms-flex-flow: row wrap;
   display: flex;
   flex-flow: row wrap;
+  border: 1px solid; 
+  border-color: red;
 }
 
 .grid-bottom {
