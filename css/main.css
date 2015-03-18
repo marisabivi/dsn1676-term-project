@@ -27,6 +27,14 @@ body {
     animation: fade 2.5s ease-in forwards;
 }
 
+.toggle {
+    height: 2em;
+    width: auto;
+    position:absolute;
+    left: 85%;
+    top: 2em;
+}
+
 @-webkit-keyframes fade {
     0% { -webkit-opacity: 0; }
     100% { -webkit-opacity: 1; }
