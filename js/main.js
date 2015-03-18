@@ -3,7 +3,7 @@ var $panel = $('.panel');
 
 var $showHide = $('.img-show-hide');
 var $show = $('.show');
-var $img1 = $('.img1-show')
+var $img1 = $('.img1-show');
 
 var $imgMove = $('.img1');
 

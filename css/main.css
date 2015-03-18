@@ -31,7 +31,7 @@ body {
 .collapse {
     background: transparent url("../images/toggle.svg") center;
     background-repeat: no-repeat;
-    background-color:#e8cbe2; 
+    background-color: #e8cbe2; 
     position: relative;
     transition: all 100ms linear;
     opacity: 1;
@@ -41,22 +41,20 @@ body {
     border: none;
     
 }
+
 .toggle {
-    position:absolute;
+    position: absolute;
     left: 85%;
     top: 2em;
 }
 
 .panel {
-    width: 100%;
     display: none;
-    background-color:#e8cbe2;
+    background-color: #e8cbe2;
     color:  #6e387c;
     text-align: center;
-    transform: translateY(50%);
-    
     transition: all 200ms linear;
-    max-height: 0;
+    max-height: 40;
     overflow: hidden;
 }
 
