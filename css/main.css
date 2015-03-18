@@ -18,6 +18,8 @@ html {
 body {
     margin: 0;
     padding: 0;
+     overflow-x: hidden;
+   
 }
 
 .logo {
@@ -53,6 +55,7 @@ body {
     background-color: #e8cbe2;
     color:  #6e387c;
     text-align: center;
+    
     transition: all 200ms linear;
     max-height: 40;
     overflow: hidden;
@@ -127,7 +130,7 @@ h2 {
     -webkit-animation:  hover 2.5s ease-in-out alternate infinite;
     animation: hover 2.5s ease-in-out alternate infinite;
     transform-origin: center;
-   
+
 }
 
 @-webkit-keyframes hover {
@@ -179,15 +182,42 @@ h2 {
     background-color: #9476a2;
 }
 
+.name {
+    border: none;
+    background-color: #6e387c;
+    display:block;
+    font-size: .5em;
+    
+}
+
 .arrow {
     width: 50%;
     height:auto;
     margin: 25% 25% -5%;
 }
 
+.par {
+    background-color: #6e387c;     
+}
+
 .img {
     height:300px;
     width: auto;
+}
+
+.img-container {
+    background-color: white;
+    height:300px;
+    width: auto;
+}
+
+.img-content {
+    position: absolute;
+    top: 15px;
+}
+
+.main {
+    width: 50%;
 }
 
 .img1-show {
@@ -226,16 +256,6 @@ h2 {
       top: 70px;
       right: 100%;
     }
-    
-}
-
-.par {
-    background-color: #6e387c;     
-}
-
-.main {
-    width: 50%;
-}
 
     
 @media only screen and (min-width: 40em) {
