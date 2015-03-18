@@ -62,7 +62,7 @@ h2 {
 .muru {
         position: absolute;
         width: 200px;
-        height: auto;
+        height: auto
         opacity: 1;
         -webkit-transition:  opacity 1s ease-in forwards;
         transition: opacity 1s ease-in forwards;
@@ -129,15 +129,6 @@ h2 {
     transition: all .1s linear;
 }
 
-.down a:hover {
-    background-color: #9476a2;
-}
-
-.arrow {
-    width: 50%;
-    margin: 25% 25% -5%;
-}
-
 .solid2 {
     position: absolute;
     height: 15em;
@@ -147,8 +138,36 @@ h2 {
     top: 35em;
     margin: 0;
     width:100%;
+    z-index: 1
 }
-    
+
+.down a:hover {
+    background-color: #9476a2;
+}
+
+.arrow {
+    width: 50%;
+    height:auto;
+    margin: 25% 25% -5%;
+}
+
+
+.show {
+  height: 100px;
+  top: calc(50% - 50px);
+  width: 200px;
+  opacity: 0;
+  transition: all 200ms linear;
+  overflow: hidden;
+  background-image: url(../images/jpg/1-1G.jpg);
+  z-index: 1;
+}
+
+.js-show {
+    opacity: 1;
+}
+
+
 @media only screen and (min-width: 20em) {
     
     .muru {
@@ -325,14 +344,6 @@ h2 {
     }
 
 @media only screen and (min-width: 90em) {
-    
-      .muru {
-        position: absolute;
-        width: 200px;
-        height: auto;
-        animation: fly 2.5s ease-in forwards;
-        transform-origin: center;
-}
     
     .hov {
         top: 100px;
