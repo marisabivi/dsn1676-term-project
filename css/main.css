@@ -60,14 +60,16 @@ body {
 .panel {
     width: 100%;
     display: none;
+    float:left;
     background-color: #e8cbe2;
     color:  #6e387c;
     text-align: center;
-    overflow: hidden;
+    overflow:hidden;
+
 }
 
 .js-panel {
-    display:block;
+    display: block;
     max-height: 10em;
 }
 
@@ -125,7 +127,11 @@ h2 {
     -webkit-animation:  hover 2.5s ease-in-out alternate infinite;
     animation: hover 2.5s ease-in-out alternate infinite;
     transform-origin: center;
+}
 
+.main {
+    width: 50%;
+    height:auto;
 }
 
 @-webkit-keyframes hover {
