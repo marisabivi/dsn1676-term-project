@@ -8,8 +8,7 @@ $btnCollapse.on('click', function () {
     $panel.toggleClass('js-panel');
 });
 
-$thumbs.on('click', 'a' function(e) {
-    e.preventDefault();
-    
+$thumbs.on('click', function (eventObject) {
+    eventObject.preventDefault();
 });
 

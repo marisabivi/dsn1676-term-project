@@ -18,8 +18,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-     overflow-x: hidden;
-   
+     overflow-x: hidden;  
 }
 
 .logo {
@@ -27,43 +26,6 @@ body {
     height: auto;
     -webkit-animation: fade 2.5s ease-in forwards;
     animation: fade 2.5s ease-in forwards;
-}
-
-
-.collapse {
-    background: transparent url("../images/toggle.svg") center;
-    background-repeat: no-repeat;
-    background-color: #e8cbe2; 
-    position: relative;
-    transition: all 100ms linear;
-    opacity: 1;
-    height: 5em;
-    width: 3em;
-    overflow: hidden;
-    border: none;
-    
-}
-
-.toggle {
-    position: absolute;
-    left: 85%;
-    top: 2em;
-}
-
-.panel {
-    display: none;
-    background-color: #e8cbe2;
-    color:  #6e387c;
-    text-align: center;
-    
-    transition: all 200ms linear;
-    max-height: 40;
-    overflow: hidden;
-}
-
-.js-panel {
-    display:block;
-    max-height: 40em;   
 }
 
 @-webkit-keyframes fade {
@@ -74,6 +36,39 @@ body {
 @keyframes fade {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+.collapse {
+    background: transparent url("../images/toggle.svg") center;
+    background-repeat: no-repeat;
+    background-color: #e8cbe2; 
+    position: relative;
+    transition: all 100ms linear;
+    height: 5em;
+    width: 3em;
+    overflow: hidden;
+    border: none;
+    position: relative;  
+}
+
+.toggle {
+    position: absolute;
+    left: 85%;
+    top: 2em;
+}
+
+.panel {
+    width: 100%;
+    display: none;
+    background-color: #e8cbe2;
+    color:  #6e387c;
+    text-align: center;
+    overflow: hidden;
+}
+
+.js-panel {
+    display:block;
+    max-height: 10em;
 }
 
 .bg {
@@ -99,12 +94,12 @@ h2 {
 }
 
 .muru {
-        position: absolute;
-        width: 200px;
-        height: auto;
-        opacity: 1;
-        -webkit-transition:  opacity 1s ease-in forwards;
-        transition: opacity 1s ease-in forwards;
+     position: absolute;
+     width: 200px;
+     height: auto;
+     opacity: 1;
+    -webkit-transition:  opacity 1s ease-in forwards;
+     transition: opacity 1s ease-in forwards;
 }
 
 .hov {
@@ -117,9 +112,9 @@ h2 {
 }
     
 .deus {
-        position: absolute;
-        width: 500px;
-        height: auto;
+    position: absolute;
+    width: 500px;
+    height: auto;
  }
 
 .hov2 {
@@ -186,8 +181,7 @@ h2 {
     border: none;
     background-color: #6e387c;
     display:block;
-    font-size: .5em;
-    
+    font-size: .5em;   
 }
 
 .arrow {
@@ -221,17 +215,15 @@ h2 {
 }
 
 .img1-show {
-  left: 100em;
-  top: calc(50% - 40px);
-  background-color: hotpink;
-  transition: all 200ms linear;
+    left: 100em;
+    top: calc(50% - 40px);
+    background-color: hotpink;
+    transition: all 200ms linear;
 }
 
 .show1 {
-  right: 2em;
+    right: 2em;
 }
-
-
 
 @media only screen and (min-width: 20em) {
     
@@ -274,29 +266,6 @@ h2 {
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
      }
-
-    @-webkit-keyframes fly {
-   
-        10% { 
-            -webkit-transform: translatex(-20em);
-        }
-        
-        100% {
-            -webkit-transform: translatex(50px);
-       
-        }
-    }
-    
-    @keyframes fly {
-   
-        10% { 
-            transform: translateX(-20em);
-        }
-        
-        100% {
-            transform: translateX(50px);
-        }
-    }
     
     .hov {
         top: 150px;
@@ -332,14 +301,14 @@ h2 {
         }
     }
     
-        .hov2 {
-            right:70%;
-            top: 80px;
+    .hov2 {
+        right:70%;
+        top: 80px;
         }
 }
     
 @media only screen and (min-width: 60em) {
-      .muru {
+    .muru {
         position: absolute;
         width: auto;
         height: 5em;
@@ -348,18 +317,6 @@ h2 {
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
       }
-
-    @-webkit-keyframes fly {
-   
-        10% { 
-            -webkit-transform: translatex(-20em);
-        }
-        
-        100% {
-            -webkit-transform: translatex(50px);
-       
-        }
-    }
     
     @keyframes fly {
    
@@ -397,6 +354,7 @@ h2 {
         margin: 0;
         width:100%;
     }
+}
 
 @media only screen and (min-width: 90em) {
     
@@ -413,9 +371,5 @@ h2 {
         transform-origin: center;
     }
     
-    .hov2 {
-        right:40%;
-        top: 60px;
-    }   
 }
 
