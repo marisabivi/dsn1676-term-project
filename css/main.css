@@ -38,6 +38,7 @@ body {
     100% { opacity: 1; }
 }
 
+
 .collapse {
     background: transparent url("../images/toggle.svg") center;
     background-repeat: no-repeat;
@@ -65,7 +66,10 @@ body {
     color:  #6e387c;
     text-align: center;
     overflow:hidden;
+}
 
+ul {
+list-style-type: none;
 }
 
 .js-panel {
@@ -81,14 +85,6 @@ body {
     height: 602px;
     width: 100%;
     z-index: -3;
-}
-
-.solid {
-    background-color:  #e8cbe2;
-    overflow: hidden;
-    padding: 0;
-    z-index: 2;
-    margin:0;
 }
 
 h2 {
@@ -169,15 +165,12 @@ h2 {
 }
 
 .solid2 {
-    position: absolute;
     height: 15em;
     background-color:  #e8cbe2;
     overflow: hidden;
     padding: 0;
-    top: 35em;
     margin: 0;
     width:100%;
-    z-index: 1000;
 }
 
 .down a:hover {
@@ -197,39 +190,46 @@ h2 {
     margin: 25% 25% -5%;
 }
 
+.solid {
+    background-color:  #e8cbe2;
+    overflow: hidden;
+    padding: 0;
+    z-index: 2;
+    margin:0;
+}
+
 .par {
-    background-color: #6e387c;     
+    background-color: #6e387c;
+    overflow: hidden;
+    height:60em;
 }
 
-.img {
-    height:300px;
+a img {
+    height:200px;
     width: auto;
 }
 
-.img-container {
-    background-color: white;
-    height:300px;
-    width: auto;
+.lightbox {
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+   
 }
 
-.img-content {
-    position: absolute;
-    top: 15px;
+.lightbox[data-state="visible"] {
+    display: block;
 }
 
-.main {
-    width: 50%;
-}
 
-.img1-show {
-    left: 100em;
-    top: calc(50% - 40px);
-    background-color: hotpink;
-    transition: all 200ms linear;
-}
-
-.show1 {
-    right: 2em;
+.lightbox-content {
+    left: 15px;
+    right:15px;
+    bottom:15px;
+    top:15px;
+    height:20em;
+    border-radius: 1px;
+    
 }
 
 @media only screen and (min-width: 20em) {
