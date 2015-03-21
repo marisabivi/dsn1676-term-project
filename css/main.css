@@ -39,16 +39,15 @@ body {
 }
 
 .collapse {
-    background: transparent url("../images/toggle.svg") center;
-    background-repeat: no-repeat;
+    background-image: url("../images/toggle.svg");
+    background-size: 6em;
     background-color: #e8cbe2; 
     position: relative;
     transition: all 100ms linear;
-    height: 5em;
     width: 3em;
+    height:4em;
     overflow: hidden;
     border: none;
-    position: relative;  
 }
 
 .toggle {
@@ -213,8 +212,7 @@ a img {
     left: 0;
     right:0;
     top:0;
-    bottom:0;
-   
+    bottom:0;   
 }
 
 .lightbox[data-state="visible"] {
@@ -228,8 +226,7 @@ a img {
     bottom:15px;
     top:15px;
     height:20em;
-    border-radius: 1px;
-    
+    border-radius: 1px;   
 }
 
 ul {
@@ -252,15 +249,15 @@ ul {
         left: -10%;
     }
  
- .deus {
+    .deus {
         position: absolute;
         width: 500px;
         height: auto;
     }
     
- .hov2 {
-      top: 70px;
-      right: 100%;
+    .hov2 {
+        top: 70px;
+        right: 100%;
     }
 
     
@@ -325,7 +322,6 @@ ul {
     .muru {
         position: absolute;
         width: auto;
-        height: 5em;
         padding-left: 10em;
         -webkit-animation: fly 2.5s ease-in forwards;
         animation: fly 2.5s ease-in forwards;
