@@ -53,23 +53,33 @@ body {
 
 .toggle {
     position: absolute;
-    left: 85%;
+    left: 90%;
     top: 2em;
 }
 
 .panel {
-    width: 100%;
+    width: 20em;
     display: none;
     float:left;
     background-color: #e8cbe2;
     color:  #6e387c;
     overflow:hidden;
+    margin-left: -5em;
+    padding: 1em;
+   
 }
 
-ul {
+.panel a {
     list-style-type: none;
-    margin: none;
-    -webkit-padding-start: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.panel a:hover {
+    background-color: #6e387c;
+    color: white;
+    overflow: hidden;
+    width: 20em;
 }
 
 .js-panel {
@@ -159,9 +169,13 @@ h2 {
     position: relative;
     top: -10px;
     margin: auto;
-    text-decoration: none; 
     -webkit-transition: all .1s linear;
+    text-decoration: none; 
     transition: all .1s linear;
+}
+
+.down a:hover {
+    background-color: #9476a2;
 }
 
 .solid2 {
@@ -169,17 +183,6 @@ h2 {
     padding: 0;
     margin: 0;
     width:100%;
-}
-
-.down a:hover {
-    background-color: #9476a2;
-}
-
-.name {
-    border: none;
-    background-color: #6e387c;
-    display:block;
-    font-size: .5em;   
 }
 
 .arrow {
@@ -228,6 +231,13 @@ a img {
     border-radius: 1px;
     
 }
+
+ul {
+    list-style-type: none;
+    margin: none;
+    -webkit-padding-start: 0;
+}
+
 
 @media only screen and (min-width: 20em) {
     
