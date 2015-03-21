@@ -231,7 +231,7 @@ a img {
 
 ul {
     list-style-type: none;
-    margin: none;
+    margin: 0;
     -webkit-padding-start: 0;
 }
 
@@ -382,4 +382,3 @@ ul {
     }
     
 }
-
