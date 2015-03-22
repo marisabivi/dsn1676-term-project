@@ -219,7 +219,6 @@ a img {
     display: block;
 }
 
-
 .lightbox-content {
     left: 15px;
     right:15px;
@@ -239,7 +238,6 @@ ul {
     font-size: .7em;
     line-height: 1.4798;
 }
-
 
 @media only screen and (min-width: 20em) {
     
@@ -264,7 +262,6 @@ ul {
         top: 70px;
         right: 100%;
     }
-
     
 @media only screen and (min-width: 40em) {
     .logo {
@@ -283,6 +280,30 @@ ul {
         transform-origin: center;
      }
     
+    @-webkit-keyframes fly {
+   
+        10% { 
+            transform: translatex(-20em);
+        }
+        
+        100% {
+            transform: translatex(50px);
+       
+        }
+    } 
+    
+     @keyframes fly {
+   
+        10% { 
+            transform: translatex(-20em);
+        }
+        
+        100% {
+            transform: translatex(50px);
+       
+        }
+    } 
+    
     .hov {
         top: 150px;
         left: -5%;
@@ -290,7 +311,7 @@ ul {
     
     .deus {
         position: absolute;
-        width: 500px;
+        width: 600px;
         height: auto;
         -webkit-animation: fly2 3s ease-in-out forwards;
         animation: fly2 3s ease-in-out forwards;
@@ -327,27 +348,16 @@ ul {
     .muru {
         position: absolute;
         width: auto;
+        height: 15em;
         padding-left: 10em;
         -webkit-animation: fly 2.5s ease-in forwards;
         animation: fly 2.5s ease-in forwards;
         transform-origin: center;
       }
     
-    @keyframes fly {
-   
-        10% { 
-            transform: translatex(-20em);
-        }
-        
-        100% {
-            transform: translatex(50px);
-       
-        }
-    } 
-
   .deus {
         position: absolute;
-        width: 500px;
+        width: 700px;
         height: auto;
         -webkit-animation: fly2 3s ease-in-out forwards;
         animation: fly2 3s ease-in-out forwards;
@@ -355,20 +365,10 @@ ul {
     }
     
     .hov2 {
-        right:40%;
+        right:50%;
         top: 60px;
     }
 
-    .solid2 {
-        position: absolute;
-        height: 15em;
-        background-color:  #e8cbe2;
-        overflow: hidden;
-        padding: 0;
-        top: 33em;
-        margin: 0;
-        width:100%;
-    }
 }
 
 @media only screen and (min-width: 90em) {
@@ -377,13 +377,6 @@ ul {
         top: 100px;
         left: -5%;
     }
- 
-  .deus {
-        position: absolute;
-        width: 500px;
-        height: auto;
-        animation: fly2 3s ease-in-out forwards;
-        transform-origin: center;
-    }
+
     
 }
