@@ -225,7 +225,7 @@ a img {
     right:15px;
     bottom:15px;
     top:15px;
-    height:20em;
+    height:33em;
     border-radius: 1px;   
 }
 
@@ -233,6 +233,11 @@ ul {
     list-style-type: none;
     margin: 0;
     -webkit-padding-start: 0;
+}
+
+.small {
+    font-size: .7em;
+    line-height: 1.4798;
 }
 
 
