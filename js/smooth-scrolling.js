@@ -5,3 +5,7 @@ $('.panel').localScroll({
 $('.down').localScroll({
     target:'body'
 });
+
+$('.foot').localScroll({
+    target:'body'
+});
