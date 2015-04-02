@@ -6,6 +6,4 @@ $('.down').localScroll({
     target:'body'
 });
 
-$('.foot').localScroll({
-    target:'body'
-});
+$('.foot').localScroll();
