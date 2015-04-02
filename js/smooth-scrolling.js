@@ -2,7 +2,7 @@ $('.panel').localScroll({
     target:'body'
 });
 
-$('.down').localScroll({
+$('.solid2').localScroll({
     target:'body'
 });
 
