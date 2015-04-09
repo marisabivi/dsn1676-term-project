@@ -242,39 +242,20 @@ ul {
 }
 
 #dead_end {
-    -webkit-animation: show-dead 10s linear;
-    animation: show-dead 10s linear;
-
+    animation: dead  700ms ease-in infinite;
 }
 
-#white {
-    -webkit-animation: show-dead 10s linear;
-    animation: show-dead 10s linear;
-}
-
-@-webkit-keyframes show-dead {
-    0%{
-        -webkit-transform: translateY(0);
+@keyframes dead {
+ 
+    0% {
+       opacity: 0;
     }
     
     100% {
-        -webkit-transform: translateY(30);
+         opacity: 1;
     }
 }
 
-@keyframes show-dead {
-    0%{
-        transform: translateY(0);
-    }
-    
-    100% {
-        transform: translateY(30);
-    }
-}
-
-.footer a{
-    colour:white
-}
 
 @media only screen and (min-width: 20em) {
     
