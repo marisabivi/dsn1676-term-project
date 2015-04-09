@@ -241,10 +241,18 @@ ul {
     line-height: 1.4798;
 }
 
-.svg {
-    height: 50%;
-    width:auto;
+#white {
+    animation: nose-twitch 1s linear;
+}
 
+@keyframes nose-twitch {
+    0%{
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateY(30);
+    }
 }
 
 .footer a{
