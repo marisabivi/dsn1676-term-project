@@ -241,6 +241,12 @@ ul {
     line-height: 1.4798;
 }
 
+.svg {
+    height: 50%;
+    width:auto;
+
+}
+
 .footer a{
     colour:white
 }
