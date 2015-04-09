@@ -241,11 +241,28 @@ ul {
     line-height: 1.4798;
 }
 
-#white {
-    animation: nose-twitch 1s linear;
+#dead_end {
+    -webkit-animation: show-dead 10s linear;
+    animation: show-dead 10s linear;
+
 }
 
-@keyframes nose-twitch {
+#white {
+    -webkit-animation: show-dead 10s linear;
+    animation: show-dead 10s linear;
+}
+
+@-webkit-keyframes show-dead {
+    0%{
+        -webkit-transform: translateY(0);
+    }
+    
+    100% {
+        -webkit-transform: translateY(30);
+    }
+}
+
+@keyframes show-dead {
     0%{
         transform: translateY(0);
     }
