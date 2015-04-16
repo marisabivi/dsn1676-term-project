@@ -241,12 +241,6 @@ ul {
     line-height: 1.4798;
 }
 
-#images {
-        height:100px;
-        margin-left: -6em;
-        
-    }
-
 /*#dead_end {
     animation: dead 700ms ease-in infinite;
 }
@@ -295,8 +289,8 @@ ul {
     }
     
     #images {
-        height:300px;
-        margin-left: -6em;
+        height:200px;
+        margin-left: -15em;
         
 }
     
