@@ -246,7 +246,7 @@ ul {
     transition:  all 1s linear;
 }
 
-.js-active #dead-end {
+.js-active #dead_end {
     opacity: 1;
     fill: black;
 }

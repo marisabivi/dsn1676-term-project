@@ -7,6 +7,12 @@ var $lb = $('.lightbox');
 var $lbHeading = $('.lightbox-heading');
 var $lbDesc = $ ('.lb-desc');
 
+var $deadEnd =$('.dead_end');
+
+$deadEnd.waypoint(function () {
+   $deadEnd.toggleClass('js-active');
+}, {offset: '90%'});
+
 $btnCollapse.on('click', function () {
     $panel.toggleClass('js-panel');
 });
@@ -19,9 +25,3 @@ $thumbs.on('click', 'a', function (e) {
     $lbHeading.html($(this).attr('data-title'));
     $lbDesc.html($(this).attr('data-desc'));
 });
-
-var $deadEnd =$('.dead_end');
-
-$deadEnd.waypoint(function () {
-   $deadEnd.toggleClass('js-active');
-}, {offset:'90%'});
