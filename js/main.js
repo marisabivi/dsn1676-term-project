@@ -5,13 +5,9 @@ var $thumbs = $('.thumbnails');
 var $lbImg = $('.lightbox-img')
 var $lb = $('.lightbox');
 var $lbHeading = $('.lightbox-heading');
-var $lbDesc = $ ('.lb-desc');
+var $lbDesc = $('.lb-desc');
 
-var $deadEnd =$('.dead_end');
-
-$deadEnd.waypoint(function () {
-   $deadEnd.toggleClass('js-active');
-}, {offset: '90%'});
+var $deadEnd =$('.phone');
 
 $btnCollapse.on('click', function () {
     $panel.toggleClass('js-panel');
@@ -25,3 +21,7 @@ $thumbs.on('click', 'a', function (e) {
     $lbHeading.html($(this).attr('data-title'));
     $lbDesc.html($(this).attr('data-desc'));
 });
+
+$deadEnd.waypoint(function () {
+   $deadEnd.toggleClass('js-active');
+}, { offset: '40%' });
