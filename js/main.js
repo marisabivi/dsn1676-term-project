@@ -24,4 +24,4 @@ $thumbs.on('click', 'a', function (e) {
 
 $deadEnd.waypoint(function () {
    $deadEnd.toggleClass('js-active');
-}, { offset: '40%' });
+}, { offset: '30%' });

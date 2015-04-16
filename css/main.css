@@ -241,8 +241,8 @@ ul {
     line-height: 1.4798;
 }
 
-<!--#dead_end {
-    animation: dead  700ms ease-in infinite;
+/*#dead_end {
+    animation: dead 700ms ease-in infinite;
 }
 
 @keyframes dead {
@@ -254,7 +254,7 @@ ul {
     100% {
          opacity: 1;
     }
-} Solution is SVG animation -->
+} Used for assignment 8 */ 
 
 #dead_end {
     opacity: 0;
