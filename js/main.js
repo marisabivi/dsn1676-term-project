@@ -20,3 +20,8 @@ $thumbs.on('click', 'a', function (e) {
     $lbDesc.html($(this).attr('data-desc'));
 });
 
+var $deadEnd =$('.dead_end');
+
+$deadEnd.waypoint(function () {
+   $deadEnd.toggleClass('js-active');
+}, {offset:'90%'});

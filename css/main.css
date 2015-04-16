@@ -241,21 +241,15 @@ ul {
     line-height: 1.4798;
 }
 
-#dead_end {
-    animation: dead  700ms ease-in infinite;
+#dead_end{
+    opacity: 0;
+    transition:  all 1s linear;
 }
 
-@keyframes dead {
- 
-    0% {
-       opacity: 0;
-    }
-    
-    100% {
-         opacity: 1;
-    }
+.js-active #dead-end {
+    opacity: 1;
+    fill: black;
 }
-
 
 @media only screen and (min-width: 20em) {
     
