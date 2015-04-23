@@ -22,6 +22,32 @@ body {
     background-color: #6e387c;
 }
 
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.skip-links a {
+  padding: 0.5em 0.75em;;
+  margin: 0 0 0 15em;
+  position: absolute;
+  top: 0em;
+
+  background-color: #6e387c;
+
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
 .logo {
     width: 180px;
     height: auto;
@@ -128,7 +154,6 @@ h2 {
 
 .hov2 {
     position: absolute;
-    z-index: -1;
     top: 80px;
     right: 100%;
     -webkit-animation:  hover 2.5s ease-in-out alternate infinite;
@@ -196,7 +221,7 @@ h2 {
     background-color:  #e8cbe2;
     overflow: hidden;
     padding: 0;
-    z-index: 2;
+    z-index: 1;
     margin:0;
 }
 
