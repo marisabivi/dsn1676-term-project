@@ -30,10 +30,10 @@ body {
 }
 
 .skip-links a {
-  padding: 0.5em 0.75em;;
+  padding: 0.5em 0.75em;
   margin: 0 0 0 15em;
   position: absolute;
-  top: 0em;
+  top: -3em;
 
   background-color: #6e387c;
 
