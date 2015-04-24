@@ -77,6 +77,18 @@ body {
     border: none;
 }
 
+.collapse:focus {
+    background-image: url("../images/toggle.svg");
+    background-size: 6em;
+    background-color: #c6afc1; 
+    position: relative;
+    transition: all 100ms linear;
+    width: 3em;
+    height:4em;
+    overflow: hidden;
+    border: none;
+}
+
 .toggle {
     position: absolute;
     left: 90%;
@@ -103,6 +115,13 @@ body {
 }
 
 .panel a:hover {
+    background-color: #6e387c;
+    color: white;
+    overflow: hidden;
+    width: 20em;
+}
+
+.panel a:focus {
     background-color: #6e387c;
     color: white;
     overflow: hidden;
@@ -204,6 +223,10 @@ h2 {
     background-color: #9476a2;
 }
 
+.down a:focus {
+    background-color: #9476a2;
+}
+
 .solid2 {
     height: 7em;
     padding: 0;
@@ -298,6 +321,14 @@ ul {
      float: right;
      margin-top: -8em;
      padding-right: 2em;
+}
+
+.foot a:hover {
+    color: #6e387c;
+}
+
+.foot a:focus {
+    color: #6e387c;
 }
 
 @media only screen and (min-width: 20em) {
