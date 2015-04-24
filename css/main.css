@@ -289,6 +289,17 @@ ul {
     opacity: 1;
 }
 
+.social {
+    width: 50px;
+}
+
+.social-p {
+     text-align: right;
+     float: right;
+     margin-top: -8em;
+     padding-right: 2em;
+}
+
 @media only screen and (min-width: 20em) {
     
     .muru {
